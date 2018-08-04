@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <!--build:css css/styles.min.css-->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+  <!--endbuild-->
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <h1>Responsive Website/App</h1>
+    <p>With a <b>flexbox</b> layout.</p>
+  </div>
+
+  <!-- Nav -->
+  <nav class="navbar">
+        <a href="#" id="logo">logo</a>
+        <span id="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <ul id="main-nav">
+            <li>
+                <a href="#" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Blog</a>
+            </li>
+        </ul>
+    </nav>
+  <!-- flexible content -->
+  <div class="row">
+    <div class="sidebar">
+      <h2>Title</h2>
+      <h5>Photo</h5>
+      <div class="dummy-img" style="height:200px;">Image</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do . </p>
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <div class="dummy-img" style="height:160px;">Image</div><br>
+        <div class="dummy-img" style="height:160px;">Image</div><br>
+        <div class="dummy-img" style="height:160px;">Image</div>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+    </div>
+    <div class="main">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="dummy-img" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <br>
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="dummy-img" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    Footer
+  </div>
+
+  <!--build:js js/main.min.js -->
+  <script>
+  var mainNav=document.getElementById('main-nav');
+  var navbarToggle=document.getElementById('navbar-toggle');
+
+  navbarToggle.addEventListener('click',function(){
+
+      if(this.classList.contains('active')){
+          mainNav.style.display="none";
+          this.classList.remove('active');
+      }
+      else{
+          mainNav.style.display="flex";
+          this.classList.add('active');
+
+      }
+  });
+
+</script>
+  <script src="js/lib/another-library.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
