@@ -2,8 +2,7 @@
 
 A responsive website layout using flexbox and built with my gulp build tool
 below. To use as a template just clone and run `npm install` from the directory
-you cloned it to. Then type gulp to fire up the server and watch your files for
-changes.
+you cloned it to. Then type `gulp` to fire up the server and watch your files for changes. You can read below for info on how to use the build tool.
 
 # Gulp Build Tool
 
